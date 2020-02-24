@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODH MVC Sample</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+    <link href="@Url.Content("~/Content/kendo/2016.2.607/kendo.common.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2016.2.607/kendo.mobile.all.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2016.2.607/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2016.2.607/kendo.blueopal.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2016.2.607/kendo.dataviz.blueopal.min.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/kendo/2016.2.607/jquery.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2016.2.607/jszip.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2016.2.607/kendo.all.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2016.2.607/kendo.aspnetmvc.min.js")"></script>
+</head>
+<body>
+    <div id="BackGroundLoadingIndicator" class="bgLoadingIndicator" style="display: none; z-index: 12002">
+    </div>
+    <div id="LoadingIndicatorPanel" style="display: none; z-index: 12002; background-color: red">
+        <img id="imgLoading" class="loader" alt="loading..." style="display: none; z-index: 12001;" src="@Url.Content("~/Content/Images/loading2.gif")" />
+    </div>
+<div class="page">
+    <div style="background: #FAFAFA;">
+        <img style="width: 1026px; padding: 0; border: 0; zoom: 70%" src="~/Content/images/OhioLogo.png"/>
+    </div>
+    <div id="FlashNotifications">
+        <div id="FlashNotification-Message"></div>
+    </div>
+    @{Html.RenderAction("MainMenu", "Nav");}
+    <div id="divResult" class="isa_success" style="display: none"></div>
+    <div id="div_alert_window"></div>
+    <div id="main">
+        @RenderBody()
+    </div>
+    @{Html.RenderAction("PageFooter", "Nav");}
+</div>
+    @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+        var appRoot = '@Url.Content("~/")';
+
+        setTimeout(function () {
+            var curdmessage = $(".isa_success");
+            if (curdmessage.length > 0) {
+                curdmessage.hide();
+            }
+        }, 5000);
+        $(document).ready(function () {
+            $("#small").click(function (event) {
+                
+                $(".page").css('font-size', '8.6pt');
+            });
+              $("#medium").click(function(event) {
+                $(".page").css('font-size', '10pt');
+              });
+             $("#large").click(function(event) {
+                $(".page").css('font-size', '11pt');
+            });
+            isDirty = false;
+            $("#btCancel").bind("click", function () { return checkDirtyFlag(); });
+        });
+
+        $(document).ajaxStart(function () {
+            $("#ajax-loading").show();
+            showLoadingIndicator();
+        });
+
+        $(document).ajaxComplete(function (response, jqXHR) {
+            $("#ajax-loading").hide();
+            hideLoadingIndicator();
+            setTimeout(function () {
+                var curdmessage = $(".isa_success");
+                if (curdmessage.length > 0) {
+                    curdmessage.hide();
+                }
+            }, 5000);
+
+            if (jqXHR.getResponseHeader('REQUIRES_AUTH') === '1') {
+                window.location.href = '@Url.Action("Logout", "Logout")';
+            }
+        });
+
+        $.ajaxSetup({ cache: false });
+            
+
+    </script>
+</body>
+</html>

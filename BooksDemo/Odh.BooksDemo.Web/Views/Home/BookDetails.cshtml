@@ -1,0 +1,85 @@
+﻿@using Odh.BooksDemo.Entities
+@using Odh.BooksDemo.Entities
+@using Odh.BooksDemo.Web.Infrastructure
+@model Odh.BooksDemo.Entities.Book
+
+<div id="divBookResult" style="display: none;" class="isa_success"></div>
+<div id="divBookDetails">
+    @using (Ajax.BeginForm("SaveBook", "Home", new AjaxOptions() { OnSuccess = "onSaveBook", UpdateTargetId = "divBookResult", OnFailure = "OnAjaxError", HttpMethod = "Post" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(x => x.BookId)
+        <fieldset>
+            <legend>Book</legend>
+            <table width="98%" class="resultTable">
+                <tr>
+                    <td style="width:20%">@Html.LabelFor(x => x.BookId)</td>
+                    <td>@Model.BookId</td>
+                </tr>
+                <tr>
+                    <td style="width:20%">@Html.LabelForRequired(x => x.BookName)</td>
+                    <td>
+                        @Html.Kendo().TextBoxFor(x => x.BookName).HtmlAttributes(new { @class = "large", title = "Name of the book" })
+                        @Html.ValidationMessageFor(x => x.BookName)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:20%">@Html.LabelForRequired(x => x.IsbNumber)</td>
+                    <td>
+                        @Html.Kendo().TextBoxFor(x => x.IsbNumber).HtmlAttributes(new { @class = "large", title = "ISB Number of the book" })
+                        @Html.ValidationMessageFor(x => x.IsbNumber)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%">@Html.LabelForRequired(x => x.GenreId)</td>
+                    <td>
+                        @Html.Kendo().DropDownList().Name("GenreId").BindTo(new SelectList(typeof(Genre).GetEnumValuesWithDescription<Genre>(), "Key", "Value"))
+                        @Html.ValidationMessageFor(x => x.GenreId)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%">@Html.LabelFor(x => x.PublishedDate)</td>
+                    <td>
+                        @Html.Kendo().DatePickerFor(x => x.PublishedDate)
+                        @Html.ValidationMessageFor(x => x.PublishedDate)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right">
+                        <input id="btSaveBook" type="submit" value="Save" class="k-button" />&nbsp;&nbsp;&nbsp;
+                        <input id="btClose" type="button" value="Close" class="k-button" />&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    }
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#divBookDetails").kendoTooltip({ filter: "input[title]" });
+
+        $('#btClose').click(function () {
+            $('#grdBooks').data('kendoGrid').dataSource.read();
+            $('#grdBooks').data('kendoGrid').refresh();
+            var myWin = $('#winBook').data('kendoWindow');
+            myWin.close();
+        });
+        $(document).on('invalid-form.validate', 'form', function () {
+            var button = $(this).find('input[type="submit"]');
+            setTimeout(function () {
+                button.removeAttr('disabled');
+            }, 1);
+        });
+        $(document).on('submit', 'form', function () {
+            var button = $(this).find('input[type="submit"]');
+            setTimeout(function () {
+                button.attr('disabled', 'disabled');
+            }, 0);
+        });
+    });
+    function onAjaxError(xhr) {
+        DialogSuccess("Internal server error. Please try again.", "", "#divBookResult");
+    }
+
+
+</script>

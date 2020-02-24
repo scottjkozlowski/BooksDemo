@@ -1,0 +1,4 @@
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\bin\Debug\Odh.BooksDemo.Entities.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\bin\Debug\Odh.BooksDemo.Entities.pdb
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\obj\Debug\Odh.BooksDemo.Entities.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\obj\Debug\Odh.BooksDemo.Entities.pdb

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odh.BooksDemo.Entities", "BooksDemo\Odh.BooksDemo.Entities\Odh.BooksDemo.Entities.csproj", "{D9F5CBB1-15F9-4BC7-A4BD-83BD6BCEBBC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odh.BooksDemo.Domain", "BooksDemo\Odh.BooksDemo.Domain\Odh.BooksDemo.Domain.csproj", "{D7D3FC64-9C37-4549-856F-76F3BA2B8B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odh.BooksDemo.Data", "BooksDemo\Odh.BooksDemo.Data\Odh.BooksDemo.Data.csproj", "{8C5426CA-82B7-48F2-A92B-26E4BE4FD33B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odh.BooksDemo.Web", "BooksDemo\Odh.BooksDemo.Web\Odh.BooksDemo.Web.csproj", "{852586B6-ACEE-4CE8-AC8A-018101AD5947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odh.BooksDemo.Web.Tests", "BooksDemo\Odh.BooksDemo.Web.Tests\Odh.BooksDemo.Web.Tests.csproj", "{4AD3F40B-FB14-4540-9D12-7CE14ED06500}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9F5CBB1-15F9-4BC7-A4BD-83BD6BCEBBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F5CBB1-15F9-4BC7-A4BD-83BD6BCEBBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F5CBB1-15F9-4BC7-A4BD-83BD6BCEBBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F5CBB1-15F9-4BC7-A4BD-83BD6BCEBBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D3FC64-9C37-4549-856F-76F3BA2B8B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D3FC64-9C37-4549-856F-76F3BA2B8B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D3FC64-9C37-4549-856F-76F3BA2B8B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D3FC64-9C37-4549-856F-76F3BA2B8B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5426CA-82B7-48F2-A92B-26E4BE4FD33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5426CA-82B7-48F2-A92B-26E4BE4FD33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5426CA-82B7-48F2-A92B-26E4BE4FD33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5426CA-82B7-48F2-A92B-26E4BE4FD33B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{852586B6-ACEE-4CE8-AC8A-018101AD5947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852586B6-ACEE-4CE8-AC8A-018101AD5947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852586B6-ACEE-4CE8-AC8A-018101AD5947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852586B6-ACEE-4CE8-AC8A-018101AD5947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AD3F40B-FB14-4540-9D12-7CE14ED06500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AD3F40B-FB14-4540-9D12-7CE14ED06500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AD3F40B-FB14-4540-9D12-7CE14ED06500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AD3F40B-FB14-4540-9D12-7CE14ED06500}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B64741F-AF4D-4779-9849-2EDA24A1CBA7}
+	EndGlobalSection
+EndGlobal

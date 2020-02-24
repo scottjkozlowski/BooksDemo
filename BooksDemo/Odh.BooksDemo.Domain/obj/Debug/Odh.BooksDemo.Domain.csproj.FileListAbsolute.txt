@@ -1,0 +1,16 @@
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\Odh.BooksDemo.Domain.dll.config
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\Odh.BooksDemo.Domain.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\Odh.BooksDemo.Domain.pdb
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\EntityFramework.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\Odh.BooksDemo.Data.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\Odh.BooksDemo.Entities.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\Odh.BooksDemo.Data.pdb
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\Odh.BooksDemo.Data.dll.config
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\Odh.BooksDemo.Entities.pdb
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\EntityFramework.xml
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\obj\Debug\Odh.BooksDemo.Domain.csprojAssemblyReference.cache
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\obj\Debug\Odh.BooksDemo.Domain.csproj.CopyComplete
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\obj\Debug\Odh.BooksDemo.Domain.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Domain\obj\Debug\Odh.BooksDemo.Domain.pdb

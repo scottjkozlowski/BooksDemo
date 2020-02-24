@@ -1,0 +1,509 @@
+﻿body {
+    background: #DBD3BA; /*#CCC;*/
+    font: 1.1em Verdana, Tahoma, arial, sans-serif;
+    color: #555;
+    text-align: left;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #999;
+}
+
+form {
+    margin: 10px;
+    padding: 0 5px;
+    border: 1px solid #f2f2f2;
+    background-color: #FAFAFA;
+}
+
+#footer {
+    text-align: right;
+    visibility: hidden;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.page {
+    /*width: 1026px;*/
+    max-width: 1026px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAFAFA;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    /*color: #2180BC;*/
+}
+
+    a:hover {
+        color: #006699; /*#88ac0b;*/
+        text-decoration: none;
+    }
+
+/* headers */
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', Tahoma, Sans-serif;
+}
+
+h1 {
+    font-size: 150%;
+    font-weight: normal;
+    color: #006699;
+}
+
+h2 {
+    font-size: 140%;
+    text-transform: uppercase;
+    color: #88ac0b;
+}
+
+h3 {
+    font-size: 120%;
+    color: #666666;
+}
+
+/* images */
+img {
+    background: #FAFAFA;
+    /*border: 1px solid #E5E5E5;*/
+    border: 1px solid #DBD3BA;
+    padding: 5px;
+}
+
+    img.float-right {
+        margin: 5px 0 10px 10px;
+    }
+
+    img.float-left {
+        margin: 5px 10px 10px 0;
+    }
+
+h1, h2, h3, p {
+    padding: 10px;
+    margin: 0;
+}
+
+ul, ol {
+    margin: 5px 20px;
+    padding: 0 20px;
+}
+
+#bannerImage {
+    background-image: url(images/WebAppHeader-1024-2.jpg);
+    width: 1026px;
+    height: 110px;
+    cursor: pointer;
+}
+
+
+fieldset {
+    border: #f78d1d 1px solid;
+    padding: 1em;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+    margin: 2px 2px;
+}
+
+    fieldset legend {
+        text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75);
+        -webkit-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+        box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+        padding: 0.2em 0.4em;
+        margin-left: 2em;
+        color: black;
+        font-size: 90%;
+        font-weight: bold;
+        text-align: left;
+        width: auto;
+    }
+
+
+
+/*Result table css*/
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;
+}
+
+.resultTable, .zebra {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+    .resultTable tr:hover {
+        background: #fbf8e9;
+        -o-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .resultTable td, .resultTable th {
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+        /*.resultTable th {
+        background: #DBD3BA;
+    }*/
+        .resultTable td:first-child, .resultTable th:first-child {
+            border-left: none;
+        }
+
+        .resultTable th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+            -webkit-border-radius: 6px 0 0 0;
+            border-radius: 6px 0 0 0;
+        }
+
+        .resultTable th:last-child {
+            -moz-border-radius: 0 6px 0 0;
+            -webkit-border-radius: 0 6px 0 0;
+            border-radius: 0 6px 0 0;
+        }
+
+        .resultTable th:only-child {
+            -moz-border-radius: 6px 6px 0 0;
+            -webkit-border-radius: 6px 6px 0 0;
+            border-radius: 6px 6px 0 0;
+        }
+
+    .resultTable tr:last-child td:first-child {
+        -moz-border-radius: 0 0 0 6px;
+        -webkit-border-radius: 0 0 0 6px;
+        border-radius: 0 0 0 6px;
+    }
+
+    .resultTable tr:last-child td:last-child {
+        -moz-border-radius: 0 0 6px 0;
+        -webkit-border-radius: 0 0 6px 0;
+        border-radius: 0 0 6px 0;
+    }
+
+    .zebra td, .zebra th {
+        padding: 10px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .zebra tbody tr:nth-child(even) {
+        background: #f5f5f5;
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+        -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+        box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    }
+
+    .zebra th {
+        text-align: left;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        border-bottom: 1px solid #ccc;
+        background-color: #eee;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee));
+        background-image: -webkit-linear-gradient(top, #f5f5f5, #eee);
+        background-image: -moz-linear-gradient(top, #f5f5f5, #eee);
+        background-image: -ms-linear-gradient(top, #f5f5f5, #eee);
+        background-image: -o-linear-gradient(top, #f5f5f5, #eee);
+        /* ReSharper disable once InvalidValue */
+        background-image: linear-gradient(top, #f5f5f5, #eee);
+    }
+
+        .zebra th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+            -webkit-border-radius: 6px 0 0 0;
+            border-radius: 6px 0 0 0;
+        }
+
+        .zebra th:last-child {
+            -moz-border-radius: 0 6px 0 0;
+            -webkit-border-radius: 0 6px 0 0;
+            border-radius: 0 6px 0 0;
+        }
+
+        .zebra th:only-child {
+            -moz-border-radius: 6px 6px 0 0;
+            -webkit-border-radius: 6px 6px 0 0;
+            border-radius: 6px 6px 0 0;
+        }
+
+    .zebra tfoot td {
+        border-bottom: 0;
+        border-top: 1px solid #fff;
+        background-color: #f1f1f1;
+    }
+
+        .zebra tfoot td:first-child {
+            -moz-border-radius: 0 0 0 6px;
+            -webkit-border-radius: 0 0 0 6px;
+            border-radius: 0 0 0 6px;
+        }
+
+        .zebra tfoot td:last-child {
+            -moz-border-radius: 0 0 6px 0;
+            -webkit-border-radius: 0 0 6px 0;
+            border-radius: 0 0 6px 0;
+        }
+
+        .zebra tfoot td:only-child {
+            -moz-border-radius: 0 0 6px 6px;
+            /* ReSharper disable once InvalidValue */
+            -webkit-border-radius: 0 0 6px 6px border-radius: 0 0 6px 6px;
+        }
+
+
+
+/* error message and informational messages*/
+.isa_info, .isa_success, .isa_warning, .isa_error, .validation-summary-errors, .validation-summary-valid {
+    border: 1px solid;
+    margin: 5px 0px;
+    font-size: 11px;
+    padding: 10px 5px 5px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    -moz-border-radius: .5em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em;
+}
+
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('images/info.png');
+}
+
+.isa_success, .validation-summary-valid {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('images/success.png');
+}
+
+.isa_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('images/warning.png');
+}
+
+.isa_error, .validation-summary-errors {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('images/error.png');
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+
+
+.loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #333333;
+    z-index: 999;
+    opacity: .30;
+    filter: alpha(opacity=30);
+}
+
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 54px;
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 12010; /* This value should be maximum since its going to overlap all other elements on page*/
+    color: #000000;
+}
+
+.ajax-loading {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    /*margin-left: -50px; half width of the spinner gif */
+    /*margin-top: -50px;  half height of the spinner gif */
+    /*margin: -150px 0 0 -150px;*/
+    margin-left: -33px;
+    margin-top: -33px;
+    /*text-align: center;*/
+    vertical-align: central;
+    z-index: 1234;
+    /*overflow: auto;*/
+    border: 1px solid #fef4e9;
+    width: 66px; /* width of the spinner gif */
+    height: 67px; /*hight of the spinner gif +2px to fix IE8 issue */
+}
+
+/*
+input[type=submit]:hover, input[type=button]:hover {
+    background: #f47c20;
+    color: #006699;
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top, #f88e11, #f06015);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+
+input[type=submit]:active {
+    color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top, #f47a20, #faa51a);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+input[type=submit],
+.actionButtons a,
+input.actionButtons,
+.submit,
+a.t-button,
+#btnOkReject {
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top, #faa51a, #f47a20);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    padding: 3px 6px 3px 6px;
+    -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    display: inline-block;
+    outline: none;
+    line-height: 1.5em;
+}
+
+    input[type=submit]:disabled,
+    #btnOkReject:disabled,
+    #btnDelete:disabled {
+        border: solid 1px gray;
+        background: gray;
+    }
+
+    */
+.label-required:after {
+    content: "*";
+    color: red;
+    float: none;
+}
+
+#MainMenu > .k-item {
+    height: 75%;
+    font-weight: bold;
+}
+
+#MainMenu > .float-right {
+    float: right;
+    border-left-width: 1px;
+    border-right-width: 0;
+}
+
+
+
+/*Pager */
+div.pager {
+    text-align: right;
+    border-top: 2px solid silver;
+    padding: .5em 0 0 0;
+    margin-top: 1em;
+}
+
+    div.pager a {
+        font-size: 1.1em;
+        color: #666;
+        text-decoration: none;
+        padding: 0 .4em 0 .4em;
+        font: 1.2em Helvetica;
+        margin: .5em;
+        cursor: pointer;
+        -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.3);
+        text-shadow: 0 1px 1px rgba(0,0,0,.3);
+        -webkit-border-radius: .5em;
+        -moz-border-radius: .5em;
+        border-radius: .5em;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        display: inline-block;
+        outline: none;
+    }
+
+        div.pager a:hover {
+            background-color: Silver;
+        }
+
+        div.pager a.selected {
+            background-color: #F09609;
+            color: White;
+        }
+
+.field-validation-error {
+    color: #D8000C;
+    font-size: 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+.k-textbox.large {
+    width: 320px !important;
+}

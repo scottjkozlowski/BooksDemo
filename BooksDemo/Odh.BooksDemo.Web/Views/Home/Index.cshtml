@@ -1,0 +1,149 @@
+﻿@using Odh.BooksDemo.Entities
+@model IEnumerable<Book>
+@{
+    ViewBag.Title = "Home Page";
+}
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#btSearch").click(function () {
+            $("#grdBooks").data('kendoGrid').dataSource.read();
+            $('#grdBooks').data('kendoGrid').refresh();
+        });
+    });
+
+    function searchBooks() {
+        return {
+            bookName: $('#srchBookName').val(),
+            "__RequestVerificationToken": $('input[name=__RequestVerificationToken]').val()
+        }
+    }
+
+    function onClose() {
+        //close actions.
+    }
+    function addBook() {
+        OpenWindow('Add new Book');
+    }
+    function editBook(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        var bookId = dataItem.BookId;
+        OpenWindow('Edit Book', bookId);
+    }
+
+    function OpenWindow(winName, bookId) {
+        var url = '@Url.Action("GetBookDetails", "Home")';
+        var myWin = $('#winBook').data('kendoWindow');
+        myWin.refresh({
+            url: url,
+            data: { bookId: bookId }
+        });
+        myWin.title(winName);
+        myWin.resize();
+        myWin.open().center();
+    }
+
+    function deleteBook(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        var bookId = dataItem.BookId;
+        confirmDelete(bookId);
+    }
+
+    function confirmDelete(e) {
+        openDialogBox("Delete Confirmation",
+                            "Are you sure want to delete this book ?",
+                            "warning",
+                             ["OK", "Cancel"],
+                             callback,
+                             e);
+    }
+
+
+    function callback(btnResult, id) {
+        if (btnResult === "OK") {
+            var url = appRoot + "Home/Delete";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: {
+                    id: id,
+                    "__RequestVerificationToken": $('input[name=__RequestVerificationToken]').val()
+                },
+                error: function (xhr, status, error) {
+                    showErrorMessage(xhr, status, error);
+                },
+                success: function (data) {
+                    if (data.Response !== "Success") {
+                        DialogSuccess(data.Response, "", "#divBookResult");
+                    }
+                    else {
+                        MSG.success("Book Successfully Deleted");
+                        $('#grdBooks').data('kendoGrid').dataSource.read();
+                        $('#grdBooks').data('kendoGrid').refresh();
+                    }
+                }
+
+            });
+
+        }
+
+    }
+
+    function showErrorMessage(xhr, status, error) {
+        MSG.error(xhr.responseText);
+    }
+
+    function onSaveBook(data) {
+        var button = $(this).find('input[type="submit"]');
+        if (data.Response !== "Success") {
+            DialogSuccess(data.Response, "", "#divBookResult");
+        } else {
+            var myWin = $('#winBook').data('kendoWindow');
+            myWin.close();
+            $('#grdBooks').data('kendoGrid').dataSource.read();
+            $('#grdBooks').data('kendoGrid').refresh();
+            MSG.success("Book saved successfully");
+        }
+        button.removeAttr('disabled');
+    }
+
+</script>
+<div id="divSearch">
+    <table class="resultTable" style="width: 98%;border: 0;">
+        <tr>
+            <td style="text-align: right; width: 20%;">
+                Search book by name: &nbsp;&nbsp;
+                @Html.TextBox("srchBookName", "", new { @class = "k-textbox", @style = "width:400px;" })&nbsp;&nbsp;
+                <input type="button" class="k-button" value="Search" id="btSearch" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="divBooks">
+    @Html.AntiForgeryToken()
+    @(Html.Kendo().Grid<Book>().Name("grdBooks")
+        .Columns(
+            c =>
+            {
+                c.Bound(e => e.BookId).Visible(false);
+                c.Bound(e => e.BookName).HeaderHtmlAttributes(new { @title = "Name of the book" }).HeaderTemplate("Book Name");
+                c.Bound(e => e.IsbNumber).HeaderTemplate("ISBN");
+                c.Bound(e => e.Genre);
+                c.Command(cmd =>
+                {
+                    cmd.Custom("Edit").Text("Edit").Click("editBook").HtmlAttributes(new { @id = "btEditBook", @title = "Edit Book" });
+                    cmd.Custom("Delete").Text("Delete").Click("deleteBook").HtmlAttributes(new { @id = "btDeleteBook", @title = "Delete Book" });
+                }).HeaderTemplate("Actions").HeaderHtmlAttributes(new { @style = "text-align:center;overflow" });
+            }
+          ).ToolBar(x => x.Template(@<div class="k-toolbar"><a class="k-button k-button-icontext" onclick="addBook()" title="Add new Book"><span class="k-icon k-add"></span>Add Book</a></div>))
+          .Sortable()
+              .Pageable(p => p.PageSizes(new[] { 10, 20, 30 }).Refresh(true).ButtonCount(5))
+              .Scrollable(a => a.Height("auto"))
+          .DataSource(d => d.Ajax().Read(r => r.Action("GetBooks", "Home").Data("searchBooks")).PageSize(30))
+
+
+    )
+</div>
+@(Html.Kendo().Window().Name("winBook").Modal(true).Events(evt => evt.Close("onClose")).Visible(false).Draggable(true).Width(1000).Height(740).Scrollable(true).Resizable())

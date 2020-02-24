@@ -1,0 +1,19 @@
+﻿<div>
+    @{
+        var userName = ViewBag.UserName ?? "Not Logged In";
+
+        Html.Kendo().Menu().Name("MainMenu").Items(
+            items =>
+            {
+                items.Add().Text("Home").Action("Index", "Home");
+                items.Add().Text("About").Action("About", "Home");
+                items.Add().Text("Contact").Action("Contact", "Home");
+                items.Add().Text("Logout").Action("Logout", "Logout").HtmlAttributes(new { @class = "float-right" });
+                items.Add().Text("Welcome, " + userName).HtmlAttributes(new { @class = "float-right" });
+                
+            }
+
+            ).Orientation(MenuOrientation.Horizontal).Render();
+    }
+
+</div>

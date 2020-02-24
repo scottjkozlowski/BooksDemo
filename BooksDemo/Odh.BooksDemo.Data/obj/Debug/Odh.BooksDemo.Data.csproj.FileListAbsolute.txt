@@ -1,0 +1,13 @@
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\Odh.BooksDemo.Data.dll.config
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\Odh.BooksDemo.Data.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\Odh.BooksDemo.Data.pdb
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\EntityFramework.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\Odh.BooksDemo.Entities.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\Odh.BooksDemo.Entities.pdb
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\EntityFramework.xml
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.csprojAssemblyReference.cache
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.csproj.CopyComplete
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.dll
+C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.pdb

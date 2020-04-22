@@ -3,3 +3,4 @@ C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\bin\De
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\obj\Debug\Odh.BooksDemo.Entities.dll
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\obj\Debug\Odh.BooksDemo.Entities.pdb
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\obj\Debug\Odh.BooksDemo.Entities.csprojAssemblyReference.cache
+C:\Users\10034024\Source\Repos\BooksDemo\BooksDemo\Odh.BooksDemo.Entities\obj\Debug\Odh.BooksDemo.Entities.csproj.CoreCompileInputs.cache

@@ -72,3 +72,4 @@ C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web\bin\zh-CN\K
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web\obj\Debug\Odh.BooksDemo.Web.csproj.CopyComplete
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web\obj\Debug\Odh.BooksDemo.Web.dll
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web\obj\Debug\Odh.BooksDemo.Web.pdb
+C:\Users\10034024\Source\Repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web\obj\Debug\Odh.BooksDemo.Web.csproj.CoreCompileInputs.cache

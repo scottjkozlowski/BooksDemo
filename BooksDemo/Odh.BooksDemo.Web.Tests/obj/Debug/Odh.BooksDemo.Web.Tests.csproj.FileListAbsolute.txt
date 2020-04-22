@@ -68,3 +68,4 @@ C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web.Tests\bin\D
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web.Tests\obj\Debug\Odh.BooksDemo.Web.Tests.csproj.CopyComplete
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web.Tests\obj\Debug\Odh.BooksDemo.Web.Tests.dll
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web.Tests\obj\Debug\Odh.BooksDemo.Web.Tests.pdb
+C:\Users\10034024\Source\Repos\BooksDemo\BooksDemo\Odh.BooksDemo.Web.Tests\obj\Debug\Odh.BooksDemo.Web.Tests.csproj.CoreCompileInputs.cache

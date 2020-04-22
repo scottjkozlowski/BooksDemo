@@ -11,3 +11,4 @@ C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.csproj.CopyComplete
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.dll
 C:\Users\10034024\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.pdb
+C:\Users\10034024\Source\Repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.csproj.CoreCompileInputs.cache

@@ -1,0 +1,43 @@
+Scott,
+In order to quickly come up to support .net development projects please complete the following tasks.
+A.	Books Demo sample application
+
+1.    Create the sample books demo project using the ODH MVC 5 starter kit. 
+a.    \\odhfilesrv01\OMIS\ODHTemplates\ODH MVC 5 StarterKit.zip 
+2.    Add one additional feature to the application
+a.    Create an Author list and details pages to add author information.
+b.    Update Book Details page to have an author dropdown list to be selected from the list of authors created.
+
+Time estimate for the above work: 24 hours
+
+B.	Complaint tracking Application support PBI
+Please complete the Complaint tracking PBI 160064, I would say it would take about 16 hours to complete the work.
+
+Let’s discuss these tasks first thing tomorrow morning. 
+
+Thanks and regards,
+Shashi  
+
+This e-mail is intended for the sole use of the intended recipient and may contain privileged, sensitive, or protected health information. If you are not the intended recipient, be advised that the unauthorized use, disclosure, copying, distribution, or action taken in reliance on the contents of this communication is prohibited. If you have received this e-mail in error, please notify the sender via telephone or return e-mail and immediately delete this e-mail. 
+ Update:
+ Scott,
+ The assignment was estimated at 20 hours of work. I would like to be done by next Friday.
+
+thanks and regards,
+Shashi
+On 3/6/2020 8:15:41 AM, Kozlowski, Scott <scott.kozlowski@odh.ohio.gov> wrote:
+I will still need a few more days of effort to complete. Yesterday was the first time I spent time working directly towards this task (about 2 hours) rather than updating my knowledge of C# in general. If you want create a PBI for this specifically (under training) and I could track work the remainder of the estimated 22 hours remaining.
+ 
+I am reviewing notes on kendo and MVC (Pluralsight, Kendo and MVC from Scratch 1h 37 min) to identify where I need to add coding changes. 
+ 
+From what I can see, I need to accomplish the following steps.
+ 
+1.	Update the database with an author table and add a foreign key to the books table
+2.	Add methods to get set the new tables data
+3.	Add a button to list the published authors(summary list) and permits the addition/modification/deletion (detail list) of the same.
+4.	Addition of tests to ensure some validity of data.
+ 
+What do you think?
+ 
+Thanks,
+Scott

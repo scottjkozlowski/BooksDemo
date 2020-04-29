@@ -52,6 +52,7 @@
     <Compile Include="Abstract\IBookRepository.cs" />
     <Compile Include="Abstract\IBooksDemoUow.cs" />
     <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Concrete\AuthorDbRepository.cs" />
     <Compile Include="Concrete\BooksDbRepository.cs" />
     <Compile Include="Concrete\GenericRepository.cs" />
     <Compile Include="Concrete\BooksDemoUow.cs" />

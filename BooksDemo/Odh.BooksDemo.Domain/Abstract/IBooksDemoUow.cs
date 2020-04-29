@@ -4,5 +4,6 @@
     {
         void Commit();
         IBookRepository BookRepository { get; }
+        IAuthorRepository AuthorRepository { get; }
     }
 }

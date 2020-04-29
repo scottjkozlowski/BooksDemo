@@ -25,5 +25,11 @@ namespace Odh.BooksDemo.Domain.Concrete
         {
             get { return new BooksDbRepository(_context); }
         }
+
+        public IAuthorRepository AuthorRepository
+        {
+            get { return new AuthorDbRepository(_context); }
+        }
+
     }
 }

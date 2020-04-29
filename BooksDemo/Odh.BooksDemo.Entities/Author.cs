@@ -9,10 +9,11 @@ namespace Odh.BooksDemo.Entities
 {
     public class Author
     {
+        [Required]
         public int AuthorId { get; set; }
         [Required(ErrorMessage = "Author Name is required")]
         public string AuthorName { get; set; }
-        [Required(ErrorMessage = "ISBN is required")]
+        [Required]
         public string IsbNumber { get; set; }
     }
 }

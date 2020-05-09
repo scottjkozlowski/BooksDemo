@@ -31,6 +31,13 @@
                     </td>
                 </tr>
                 <tr>
+                    <td style="width:20%">@Html.LabelForRequired(x => x.AuthorName)</td>
+                    <td>
+                        @Html.Kendo().TextBoxFor(x => x.AuthorName).HtmlAttributes(new { @class = "large", title = "Author Name" })
+                        @Html.ValidationMessageFor(x => x.AuthorName)
+                    </td>
+                </tr>
+                <tr>
                     <td style="width: 20%">@Html.LabelForRequired(x => x.GenreId)</td>
                     <td>
                         @Html.Kendo().DropDownList().Name("GenreId").BindTo(new SelectList(typeof(Genre).GetEnumValuesWithDescription<Genre>(), "Key", "Value"))

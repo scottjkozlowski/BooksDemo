@@ -129,6 +129,7 @@
             {
                 c.Bound(e => e.BookId).Visible(false);
                 c.Bound(e => e.BookName).HeaderHtmlAttributes(new { @title = "Name of the book" }).HeaderTemplate("Book Name");
+                c.Bound(e => e.AuthorName).HeaderHtmlAttributes(new { @title = "Author Name" }).HeaderTemplate("Author Name");
                 c.Bound(e => e.IsbNumber).HeaderTemplate("ISBN");
                 c.Bound(e => e.Genre);
                 c.Command(cmd =>

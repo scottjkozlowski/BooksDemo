@@ -48,9 +48,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthorDemoDbContext.cs" />
     <Compile Include="ElmahErrorConfiguration.cs" />
     <Compile Include="BooksDemoDbContext.cs" />
+    <Compile Include="Migrations\202002211847238_InitialCreate.cs" />
+    <Compile Include="Migrations\202002211847238_InitialCreate.Designer.cs">
+      <DependentUpon>202002211847238_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005011517173_InitialCreate1.cs" />
+    <Compile Include="Migrations\202005011517173_InitialCreate1.Designer.cs">
+      <DependentUpon>202005011517173_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005011528547_InitialCreate11.cs" />
+    <Compile Include="Migrations\202005011528547_InitialCreate11.Designer.cs">
+      <DependentUpon>202005011528547_InitialCreate11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +74,17 @@
       <Project>{d9f5cbb1-15f9-4bc7-a4bd-83bd6bcebbc8}</Project>
       <Name>Odh.BooksDemo.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002211847238_InitialCreate.resx">
+      <DependentUpon>202002211847238_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005011517173_InitialCreate1.resx">
+      <DependentUpon>202005011517173_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005011528547_InitialCreate11.resx">
+      <DependentUpon>202005011528547_InitialCreate11.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

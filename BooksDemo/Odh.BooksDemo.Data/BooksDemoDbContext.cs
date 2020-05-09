@@ -7,6 +7,7 @@ namespace Odh.BooksDemo.Data
     public class BooksDemoDbContext : DbContext
     {
         public DbSet<Book> Books { get; set; }
+        public DbSet<Author> Author { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

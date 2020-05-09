@@ -16,6 +16,9 @@ namespace Odh.BooksDemo.Entities
         [Required(ErrorMessage = "Please select a Genre")]
         [Display(Name = "Genre")]
         public int GenreId { get; set; }
+        [Required(ErrorMessage = "Author Name is required")]
+        public string AuthorName { get; set; }
+        public int? AuthorId { get; set; }
 
         [NotMapped]
         public string Genre
@@ -29,5 +32,6 @@ namespace Odh.BooksDemo.Entities
         [Display(Name = "Date Published")]
         public DateTime? PublishedDate { get; set; }
 
+        public virtual Author Author{get; set;}
     }
 }

@@ -26,3 +26,7 @@ C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh
 C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.csproj.CopyComplete
 C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.dll
 C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.pdb
+C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.Migrations.InitialCreate.resources
+C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.Migrations.InitialCreate1.resources
+C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.Migrations.InitialCreate11.resources

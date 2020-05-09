@@ -13,7 +13,5 @@ namespace Odh.BooksDemo.Entities
         public int AuthorId { get; set; }
         [Required(ErrorMessage = "Author Name is required")]
         public string AuthorName { get; set; }
-        [Required]
-        public string IsbNumber { get; set; }
     }
 }

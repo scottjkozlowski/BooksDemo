@@ -30,3 +30,7 @@ C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh
 C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.csproj.GenerateResource.cache
 C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.Migrations.InitialCreate1.resources
 C:\Users\Admin\source\repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.Migrations.InitialCreate11.resources
+C:\Users\10034024\Source\Repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.Migrations.InitialCreate.resources
+C:\Users\10034024\Source\Repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.Migrations.InitialCreate1.resources
+C:\Users\10034024\Source\Repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.Migrations.InitialCreate11.resources
+C:\Users\10034024\Source\Repos\BooksDemo\BooksDemo\Odh.BooksDemo.Data\obj\Debug\Odh.BooksDemo.Data.csproj.GenerateResource.cache
